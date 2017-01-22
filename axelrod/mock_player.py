@@ -39,9 +39,10 @@ class MockPlayer(Player):
 
 def simulate_play(player1, player2, action1=None, action2=None):
     """
-    Simulates play with or without forced history. If action1 and action2 are given, these
-    actions are enforced in the players strategy. This generally should not be
-    necessary, but various tests may force impossible or unlikely histories.
+    Simulates play with or without forced history. If action1 and action2 are
+    given, these actions are enforced in the players strategy. This generally
+    should not be necessary, but various tests may force impossible or unlikely
+    histories.
     """
 
     if action1 and action2:

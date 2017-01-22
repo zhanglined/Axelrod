@@ -55,7 +55,8 @@ class TestTitFor2Tats(TestPlayer):
         # Starts by cooperating.
         self.first_play_test(C)
         # Will defect only when last two turns of opponent were defections.
-        self.responses_test([D], [C, C, C], [D, D, D])
+        self.responses_test([D], [C, C], [D, D])
+        self.responses_test([D], [C, C, D], [D, D, D])
         self.responses_test([C], [C, C, D, D], [D, D, D, C])
 
 
